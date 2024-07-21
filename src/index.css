@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: white;
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding: 8px 16px;
+    border-radius: 100%;
+    border: 1px solid black;
+    color: red;
+}
+
+.swiper-button-next {
+    background-image: url("./assets/arrow-next-small-svgrepo-com.svg");
+}
+
+.swiper-button-prev {
+    background-image: url("./assets/arrow-prev-small-svgrepo-com.svg");
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: "";
+}
+
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: rgb(69, 1, 255);
+   
+}
+

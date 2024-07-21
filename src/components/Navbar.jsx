@@ -12,8 +12,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex justify-between bg-[#4D4E4E] h-18 text-white p-4 ">
-        <div className="flex xl:pl-10 gap-1 items-center">
+      <nav className="fixed w-full flex justify-between h-18 bg-gray text-white p-4 z-[100]">
+        <div className="flex xl:pl-10 gap-1  items-center ">
           <img
             className="w-9  mx-auto xl:hidden"
             src={LogoEsdm}
@@ -28,7 +28,7 @@ const Navbar = () => {
           <img className="w-9  mx-auto ml-1" src={LogoBlu} alt="blu" />
         </div>
         {/* Menu Hp & Tablet */}
-        <div className=" xl:hidden z-20">
+        <div className=" xl:hidden  ">
           <button
             onClick={() =>
               setSidebar({
@@ -91,7 +91,7 @@ const Navbar = () => {
 
           {/* Sidebar HP */}
           {sidebar.sidebarVisible && (
-            <aside className="fixed h-screen w-[50%] bg-[#4D4E4E] z-50 top-[4.2em] bottom-0 left-0">
+            <div className="fixed h-screen w-[50%] bg-gray z-[100] top-[4.1em] bottom-0 left-0">
               <ul className="mt-8 flex flex-col gap-5  font-inter font-medium text-lg pl-5 pr-8  items-start ">
                 <li className="w-fit inline-block relative transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100">
                   <a href="/">Home</a>
@@ -165,7 +165,7 @@ const Navbar = () => {
                   <a href="/">Data Mitra Resmi</a>
                 </li>
               </ul>
-            </aside>
+            </div>
           )}
         </div>
         {/* end Menu Hp & Tablet */}
