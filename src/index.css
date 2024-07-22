@@ -10,8 +10,8 @@
     background-repeat: no-repeat;
     padding: 8px 16px;
     border-radius: 100%;
-    border: 1px solid black;
-    color: red;
+    border: 1px solid rgb(52, 50, 50);
+    
 }
 
 .swiper-button-next {
@@ -34,3 +34,24 @@
    
 }
 
+
+.box-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    /* Hidden scroll bar */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.box-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    display: inline-block;
+   
+}

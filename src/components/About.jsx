@@ -6,6 +6,11 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import Kilang from "../assets/kilang.png";
+import Laboratorium from "../assets/laboratorium.png";
+import Workshop from "../assets/workshop.png";
+import Perkantoran from "../assets/perkantoran.png";
+
+import Pengertian from "./Pengertian";
 const About = () => {
   return (
     <>
@@ -20,7 +25,7 @@ const About = () => {
         </section>
 
         {/* content */}
-        <div className="-mt-32 w-full   ">
+        <div className="-mt-32 w-full    ">
           <Swiper
             spaceBetween={30}
             slidesPerView={"auto"}
@@ -30,11 +35,24 @@ const About = () => {
               clickable: true,
             }}
             modules={[Navigation, Pagination]}
+            breakpoints={{
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 1,
+                centeredSlides: false,
+              },
+
+              1280: {
+                slidesPerView: 4,
+                spaceBetween: 1,
+                centeredSlides: false,
+              },
+            }}
             className="z-30 h-[350px] w-full"
           >
             <SwiperSlide>
-              <div class="flex flex-col items-center px-5 md:px-0 text-center ">
-                <div class="w-[60%] md:w-[35%]">
+              <div class="flex flex-col items-center px-5 text-center md:px-12 ">
+                <div class="w-[60%]  ">
                   <img className="" src={Kilang} alt="kilang" />
                 </div>
                 <div className="">
@@ -49,8 +67,52 @@ const About = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="w-[100%] h-[100%] flex justify-center items-center">
-                Hooh
+              <div class="flex flex-col items-center px-5 md:px-16 xl:px-12 text-center ">
+                <div class="w-[47%] ">
+                  <img className="" src={Laboratorium} alt="Laboratorium" />
+                </div>
+                <div className="">
+                  <h3 class="mt-3 md:mt-4 text-xl font-bold ">Laboratorium</h3>
+                  <p class="">
+                    Laboratorium PPSDM MIGAS didedikasikan untuk memenuhi
+                    kebutuhan industri Migas yaitu laboratorium geologi dan
+                    eksplorasi, pemboran, produksi, proses dan pengolahan,
+                    pengujian, listrik, mekanik dan instrumentasi.
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div class="flex flex-col items-center px-5 md:px-16 text-center xl:px-12 ">
+                <div class="w-[43%] md:w-[44%]  xl:w-[45%] ">
+                  <img className="" src={Workshop} alt="Workshop" />
+                </div>
+                <div className="">
+                  <h3 class="mt-6 md:mt-4 xl:mt-3 text-xl font-bold ">
+                    Workshop
+                  </h3>
+                  <p class="">
+                    PPSDM MIGAS mempunyai tugas utama menyelenggaraan pelatihan
+                    berbasis kompentensi, meliputi bidang hulu, hilir dan
+                    penunjang migas.
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div class="flex flex-col items-center px-5 md:px-16 text-center xl:px-10 ">
+                <div class="w-[43%] md:w-[43%] xl:w-[45%] ">
+                  <img className="" src={Perkantoran} alt="Perkantoran" />
+                </div>
+                <div className="">
+                  <h3 class="mt-3 text-xl font-bold xl:mt-1 ">Perkantoran</h3>
+                  <p class="">
+                    PPPSDM MIGAS sebagai satuan kerja di bawah kementerian ESDM
+                    mejalankan manajemen perkantoran dengan personil yang
+                    profesional di bidang Pengembangan Sumber Daya Manusia
+                    bidang Minyak dan Gas Bumi.
+                  </p>
+                </div>
               </div>
             </SwiperSlide>
           </Swiper>
