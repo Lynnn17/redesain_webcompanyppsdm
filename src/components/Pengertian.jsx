@@ -91,7 +91,7 @@ const Pengertian = () => {
           {/* Tugas Pokok */}
           <button
             onClick={() => setOpen(!open)}
-            className="w-[90%] flex flex-row justify-between items-center mx-auto h-10 bg-gray rounded-lg px-2 mt-1 xl:mt-0"
+            className="w-[90%] flex flex-row justify-between items-center mx-auto h-10 bg-gray rounded-lg px-2 mt-1 xl:mt-2"
           >
             <p className="text-center text-white  font-bold">
               Tugas Pokok Dan Fungsi

@@ -41,8 +41,10 @@
     overflow: auto;
     /* Hidden scroll bar */
     scrollbar-width: none;
+    width: 97%;
     /* Firefox */
     -ms-overflow-style: none;
+
     /* IE and Edge */
 }
 
@@ -55,3 +57,5 @@
     display: inline-block;
    
 }
+
+

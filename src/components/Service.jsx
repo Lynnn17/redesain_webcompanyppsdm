@@ -18,7 +18,7 @@ const Service = () => {
             breakpoints={{
               768: {
                 slidesPerView: 2,
-                spaceBetween: 1,
+                spaceBetween: 20,
                 centeredSlides: false,
               },
 
